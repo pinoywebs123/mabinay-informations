@@ -6,7 +6,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: executing remote ssh commands using password
+    - name: ssh proxy command
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
@@ -15,4 +15,4 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /var/www/html
-          sudo mkdir morleygwapo
+          sudo mkdir gataya
