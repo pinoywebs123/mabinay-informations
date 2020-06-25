@@ -1,23 +1,16 @@
-name: Laravel
-
-on:
-  push:
-    branches: master
-  pull_request:
-    branches: master
-
+name: remote ssh command
+on: [push]
 jobs:
-  laravel-tests:
 
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v1
-
-    - name: Copy file via scp
-      uses: appleboy/ssh-action
-      env:
-        HOST: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.SSHKEY }}
+        port: ${{ secrets.PORT }}
+        script: whoami
