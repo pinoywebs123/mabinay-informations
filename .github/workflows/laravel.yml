@@ -13,4 +13,6 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSHKEY }}
         port: ${{ secrets.PORT }}
-        script: cd /var/www/html sudo mkdir morleygwapo
+        script: |
+          cd /var/www/html
+          sudo mkdir morleygwapo
