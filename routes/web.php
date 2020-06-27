@@ -35,6 +35,8 @@ Route::group(['prefix'=> 'user', 'namespace'=> 'User', 'middleware'=> 'user.stat
 	Route::get('/home', 'UserController@home')->name('user_home');
 	Route::get('/logout', 'UserController@logout')->name('user_logout');
 	Route::get('/message', 'UserController@message')->name('message');
+	Route::post('/news-feed','UserController@newsfeed')->name('newsfeed');
+	Route::post('/news-feed-content','UserController@newsfeed_content')->name('newsfeed_content');
 });
 
 
