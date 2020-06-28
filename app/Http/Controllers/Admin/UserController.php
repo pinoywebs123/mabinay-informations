@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\User;
+use App\Post;
 
 class UserController extends Controller
 {
@@ -35,5 +36,15 @@ class UserController extends Controller
     {
     	$user_find = User::findOrFail($request->id);
     	return response()->json($user_find);
+    }
+
+    public function show_post($post_id)
+    {
+        $find_post = Post::find($post_id);
+        if(!$find_post){
+            return redirect()->back()->with('not_found','Post not found');
+        }
+
+        return view('admin.post',compact('find_post'));
     }
 }

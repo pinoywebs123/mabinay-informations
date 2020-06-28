@@ -34,6 +34,7 @@
           
           <div class="row ">
             <div class="col-md-6 offset-md-3 pt-5">
+            
               <div class="card">
                 <div class="card-header card-header-primary">
                   <h4 class="card-title ">Login Form</h4>
@@ -98,7 +99,40 @@
       stopOnFocus: true, // Prevents dismissing of toast on hover
       onClick: function(){} // Callback after click
     }).showToast();
+     @endif
 
+    
+
+    @if(Session::has('invalid'))
+    Toastify({
+      text: "Invalid Email/Password Combination",
+      duration: 3000, 
+      newWindow: true,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: 'right', // `left`, `center` or `right`
+      backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      onClick: function(){} // Callback after click
+    }).showToast();
+
+    @endif
+
+   
+
+    @if(Session::has('banned'))
+      Toastify({
+      text: "User account has been locked!",
+      duration: 3000, 
+      newWindow: true,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: 'right', // `left`, `center` or `right`
+      backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      onClick: function(){} // Callback after click
+    }).showToast();
+       
     @endif
     
   </script>

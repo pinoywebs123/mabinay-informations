@@ -10,6 +10,29 @@
 <div class="col-md-12">
         <div class="row">
             <div class="col-md-6">
+                @if($posts)
+                <ul class="list-group">
+                    @foreach($posts as $post)
+                         <li class="list-group-item">
+                             Title:   
+                             <a href="{{route('show_post', $post->id)}}">{{$post->title}}</a>
+                             <p>{{$post->created_at->diffForHumans()}}</p>
+                         </li>
+                    @endforeach
+                 
+                  
+                </ul>
+                  {{ $posts->links() }} 
+                @endif
+            </div>
+            <div class="col-md-6">
+                @include('shared.notification')
+                <form action="{{route('newsfeed')}}" method="POST" enctype="multipart/form-data" id="image-upload" class="dropzone">
+                    @csrf
+                     <div>
+                        <h3>Upload Multiple Image By Click On Box</h3>
+                    </div>
+                </form>
             	<form action="{{route('newsfeed_content')}}" method="POST">
             		
             		<div class="form-group">
@@ -26,14 +49,7 @@
             		</div>
             	</form>
             </div>
-            <div class="col-md-6">
-            	<form action="{{route('newsfeed')}}" method="POST" enctype="multipart/form-data" id="image-upload" class="dropzone">
-	            	@csrf
-	            	 <div>
-		                <h3>Upload Multiple Image By Click On Box</h3>
-		            </div>
-	            </form>
-            </div>
+            
         </div>
     </div>
 @endsection

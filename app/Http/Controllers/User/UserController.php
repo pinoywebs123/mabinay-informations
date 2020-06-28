@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
 use Illuminate\Support\Facades\Session;
+use App\Post;
+use App\PostImage;
 
 class UserController extends Controller
 {
@@ -23,7 +25,8 @@ class UserController extends Controller
     
     public function home()
     {
-    	return view('user.home');
+        $posts = Post::orderBy('id','desc')->paginate(5);
+    	return view('user.home',compact('posts'));
     }
 
     public function logout()
@@ -60,17 +63,37 @@ class UserController extends Controller
 
     public function newsfeed_content(Request $request)
     {
-        //return Session::forget('imageList');
+        $data = $request->except('_token');
+        $data['user_id'] = Auth::id();
+
         if(!Session::has('imageList')){
-            return 'no images';
+            Post::create($data);
+        }else{
+            $post = Post::create($data);
+            foreach ($request->session()->get('imageList') as $key => $value) {
+                $post_image = new PostImage;
+                $post_image->post_id = $post->id;  
+                $post_image->image   = $value;
+                $post_image->save();
+            }
+             Session::forget('imageList');
         }
-        foreach ($request->session()->get('imageList') as $key => $value) {
-            echo $value;
-        }
-        Session::forget('imageList');
+        
+       return back()->with('success','Post Created Successfully!');
        
 
        
+       
+    }
+
+    public function show_post($post_id)
+    {
+        $find_post = Post::find($post_id);
+        if(!$find_post){
+            return redirect()->back()->with('not_found','Post not found');
+        }
+
+        return view('user.post',compact('find_post'));
        
     }
 }

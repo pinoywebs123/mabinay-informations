@@ -29,6 +29,7 @@ Route::group(['prefix'=> 'admin', 'namespace'=> 'Admin'], function(){
 	Route::get('/user-unlock/{id}','UserController@user_unlock')->name('user_unlock');
 	Route::post('/user-edit','UserController@user_edit')->name('user_edit');
 	Route::get('/user-message', 'MessageController@user_message')->name('user_message');
+	Route::get('/post/{post_id}', 'UserController@show_post')->name('admin_show_post');
 });
 
 Route::group(['prefix'=> 'user', 'namespace'=> 'User', 'middleware'=> 'user.status'], function(){
@@ -37,6 +38,7 @@ Route::group(['prefix'=> 'user', 'namespace'=> 'User', 'middleware'=> 'user.stat
 	Route::get('/message', 'UserController@message')->name('message');
 	Route::post('/news-feed','UserController@newsfeed')->name('newsfeed');
 	Route::post('/news-feed-content','UserController@newsfeed_content')->name('newsfeed_content');
+	Route::get('/post/{post_id}', 'UserController@show_post')->name('show_post');
 });
 
 

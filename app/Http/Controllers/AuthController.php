@@ -6,9 +6,11 @@ use Illuminate\Http\Request;
 use App\User;
 use Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
+
     public function home()
     {
         if(!Auth::user()){
@@ -41,16 +43,28 @@ class AuthController extends Controller
 
     public function loginCheck(Request $request)
     {
+        
+        
     	$data =$request->except('_token');
     	if(!Auth::attempt($data)){
-    		return 'Invalid';
+            Session::forget('banned');
+    		return redirect()->back()->with('invalid','invalid');
     	}else{
             
-    		if(Auth::user()->roles[0]['name'] == 'Admin'){
-    			return redirect()->route('admin_home');
-    		}else if(Auth::user()->roles[0]['name'] == 'User'){
-    			return redirect()->route('user_home');
-    		}
+             if(Auth::user()->status_id == 0){
+                Session::put('banned', 'User account has been locked');
+
+               return redirect()->back();
+
+              
+            }
+            Session::forget('banned');
+            if(Auth::user()->roles[0]['name'] == 'Admin'){
+                    return redirect()->route('admin_home');
+                }else if(Auth::user()->roles[0]['name'] == 'User'){
+                    return redirect()->route('user_home');
+            }
+    		
     	}
     }
 

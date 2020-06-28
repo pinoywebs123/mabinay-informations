@@ -19,7 +19,7 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="{{URL::to('/assets/demo/demo.css')}}" rel="stylesheet" />
   <meta name="csrf-token" content="{{ csrf_token() }}" />
-
+  @yield('styles')
 </head>
 
 <body class="">
@@ -63,6 +63,39 @@
   <script src="{{URL::to('/assets/js/core/jquery.min.js')}}"></script>
   <script src="{{URL::to('/assets/js/core/popper.min.js')}}"></script>
   <script src="{{URL::to('/assets/js/core/bootstrap-material-design.min.js')}}"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script type="text/javascript">
+    @if(Session::has('success'))
+    Toastify({
+      text: "{{Session::get('success')}}",
+      duration: 3000, 
+      newWindow: true,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: 'right', // `left`, `center` or `right`
+      backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      onClick: function(){} // Callback after click
+    }).showToast();
+
+    @endif
+
+    @if(Session::has('error'))
+    Toastify({
+      text: "{{Session::get('error')}}",
+      duration: 3000, 
+      newWindow: true,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: 'right', // `left`, `center` or `right`
+      backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      onClick: function(){} // Callback after click
+    }).showToast();
+
+    @endif
+    
+  </script>
   @yield('scripts')
   
 </body>

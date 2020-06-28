@@ -63,6 +63,7 @@
   <script src="{{URL::to('/assets/js/core/jquery.min.js')}}"></script>
   <script src="{{URL::to('/assets/js/core/popper.min.js')}}"></script>
   <script src="{{URL::to('/assets/js/core/bootstrap-material-design.min.js')}}"></script>
+  
   @yield('scripts')
   
 </body>
