@@ -17,6 +17,9 @@
                              Title:   
                              <a href="{{route('show_post', $post->id)}}">{{$post->title}}</a>
                              <p>{{$post->created_at->diffForHumans()}}</p>
+                             @if($post->user_id == Auth::id())
+                         <a href="{{route('remove_post', $post->id)}}">Remove</a>
+                             @endif
                          </li>
                     @endforeach
                  

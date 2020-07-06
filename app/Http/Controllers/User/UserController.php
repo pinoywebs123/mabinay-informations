@@ -109,4 +109,13 @@ class UserController extends Controller
         $comment->save();
         return redirect()->back()->with('success','Commented Successfully!');
     }
+
+    public function remove_post($post_id)
+    {
+        $find_post = Post::find($post_id);
+        if($find_post){
+            $find_post->delete();
+        }
+        return redirect()->back()->with('success','Post removed successfully!');
+    }
 }

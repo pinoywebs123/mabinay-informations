@@ -38,8 +38,10 @@ Route::group(['prefix'=> 'user', 'namespace'=> 'User', 'middleware'=> 'user.stat
 	Route::get('/message', 'UserController@message')->name('message');
 	Route::post('/news-feed','UserController@newsfeed')->name('newsfeed');
 	Route::post('/news-feed-content','UserController@newsfeed_content')->name('newsfeed_content');
+	Route::get('/remove-news/{post_id}','UserController@remove_post')->name('remove_post');
 	Route::get('/post/{post_id}', 'UserController@show_post')->name('show_post');
 	Route::post('/post/{post_id}', 'UserController@create_comment')->name('create_comment');
+
 });
 
 

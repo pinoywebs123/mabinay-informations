@@ -17,6 +17,11 @@
                              Title:   
                              <a href="{{route('admin_show_post', $post->id)}}">{{$post->title}}</a>
                              <p>{{$post->created_at->diffForHumans()}}</p>
+                             @if(Auth::user()->roles[0]->name == 'Admin')
+                              <a href="{{route('remove_post', $post->id)}}">Remove</a>
+                             @endif
+                            
+                            
                          </li>
                     @endforeach
                  
