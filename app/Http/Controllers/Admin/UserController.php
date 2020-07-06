@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\User;
 use App\Post;
+use App\Comment;
 
 class UserController extends Controller
 {
@@ -41,10 +42,11 @@ class UserController extends Controller
     public function show_post($post_id)
     {
         $find_post = Post::find($post_id);
+        $comments = Comment::where('post_id', $post_id)->orderBy('id','desc')->get();
         if(!$find_post){
             return redirect()->back()->with('not_found','Post not found');
         }
 
-        return view('admin.post',compact('find_post'));
+        return view('admin.post',compact('find_post','comments'));
     }
 }

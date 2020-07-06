@@ -47,7 +47,19 @@
           </div>
           </div>
         </div>
-
+        @foreach($comments as $comment)
+        <div class="card" style="width: 100%;">
+         
+          <div class="card-body">
+          <h5 class="card-title">{{$comment->user->name}}</h5>
+          <code>{{$comment->created_at->diffForHumans()}}</code>
+            <p class="card-text">
+              {{$comment->comment}}
+            </p>
+            
+          </div>
+        </div>
+        @endforeach
 
 </div>
 @endsection
