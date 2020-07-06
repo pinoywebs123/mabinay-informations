@@ -237,8 +237,10 @@
   <div class="row">
     <div class="col-sm-8">
       <h2>About Mabinay</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-     
+      <p>
+        Mabinay is a municipality in the middle part of Negros Oriental. It is the second largest town in the province of Negros Oriental. It is halfway from to Dumaguete and Bacolod. Mabinay is one of the best assets in the Negros Oriental province. Every year, more and more foreign and local tourists would come to visit this town. The beautiful and majestic of view of the valleys can capture your eyes and your eagerness to take pictures. As well as the marvelous sunrise view if you pass by the cliffs and mountain top. The town also has breathtaking waterfalls and hot spring. The trees in the town are also well preserve and taken cared of by the locals. Langub Festival Mabinay celebrates Langub Festival along with the town’s charter day celebration. Langub is a visayan word for cave. The highlights of the town fiesta are the search for Miss Mabinay every year and the Langub Festival street dancing affair. Dancers with colorful costumes would perform a unique dance choreography related to the caves of Mabinay. This festival is a thanksgiving for the wonderful creation of our mighty God. Mabinay also joins the Buglasan Festival every October which is held in Dumaguete City. They showcase their festival in the contest. They also advertise their food delicacies and tourist destinations in their booth
+
+      </p>
      
     </div>
     <div class="col-sm-4">
@@ -254,9 +256,9 @@
     </div>
     <div class="col-sm-8">
       <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <h4><strong>VISION:</strong> To become the leading brand in the Philippines in responsible and sustainable quality tourism with a conscience. .</h4><br>
+      <p><strong>MISSION:</strong> Working towards achieving our vision by carefully crafting authentic, safe, innovative, responsible and sustainable tours involving local communities and providing a learning and fun experience to our guests.
     </div>
   </div>
 </div>
