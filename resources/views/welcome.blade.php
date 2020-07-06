@@ -367,7 +367,9 @@
         <div class="card-body">
           <h5 class="card-title">Honey's Relax Inn</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View Map</a>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal10">
+            View More
+          </button>
         </div>
       </div>
       
@@ -379,7 +381,9 @@
         <div class="card-body">
           <h5 class="card-title">Honey's Lodging House</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View Map</a>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal11">
+            View More
+          </button>
         </div>
       </div>
       
@@ -391,21 +395,25 @@
         <div class="card-body">
           <h5 class="card-title">GRV Eco Lodging House</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View Map</a>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal12">
+            View More
+          </button>
         </div>
       </div>
       
     </div>
 
   </div>
-  <div class="row">
+  <div class="row" style="margin-top: 40px">
     <div class="col-md-4">
       <div class="card" style="width: 18rem; margin: 0 auto">
         <img class="card-img-top" width="200px" src="{{URL::to('/homepage/jan.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Jan Paul's Lodginghouse</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View Map</a>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal13">
+            View More
+          </button>
         </div>
       </div>
       
@@ -417,7 +425,9 @@
         <div class="card-body">
           <h5 class="card-title">Pastora Homes </h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View Map Map</a>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal14">
+            View More
+          </button>
         </div>
       </div>
       
@@ -440,8 +450,8 @@
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> Mabinay. Negros Oriental</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> mabinayinfo@gmail.com</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +63 9550238443</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> amanostevin@gmail.com</p>
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
@@ -646,6 +656,129 @@ $(document).ready(function(){
           <img class="card-img-top" width="250px" src="{{URL::to('/homepage/Niludhan2.jpg')}}" alt="Card image cap">
         </center>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15736.065399320174!2d122.8864034940443!3d9.593858622237638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac62d74d54c16d%3A0x9f948c6d6b2b27ec!2sNiludhan%20Falls!5e0!3m2!1sen!2sph!4v1594013086471!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Honey's Relax Inn
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/relax.jpg')}}" alt="Card image cap">
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/relax2.jpg')}}" alt="Card image cap">
+        </center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.5341945434498!2d122.93144031404512!3d9.720737293042959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac707ab461a08f%3A0x59e72933dec3a482!2sHoney&#39;s%20Relax%20Inn!5e0!3m2!1sen!2sph!4v1594051267858!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Honey's Lodging House</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/honey.jpg')}}" alt="Card image cap">
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/honey2.jpg')}}" alt="Card image cap">
+        </center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.4307629640857!2d122.92429431404524!3d9.729530293036937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac707015516b95%3A0x5ab5a46fd48236e0!2sHoney&#39;s%20Lodging%20House!5e0!3m2!1sen!2sph!4v1594051378681!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">GRC Echo lodging House</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/echo.jpg')}}" alt="Card image cap">
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/echo2.jpg')}}" alt="Card image cap">
+        </center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.540170816848!2d122.92889831404503!3d9.720228993043296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac70703e2753f7%3A0x98c74254bf85f15b!2sMabinay%20Lodge!5e0!3m2!1sen!2sph!4v1594051594617!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Jan Paul's Lodginghouse
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/jan.jpg')}}" alt="Card image cap">
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/jan2.jpg')}}" alt="Card image cap">
+        </center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.538248519909!2d122.9277433140451!3d9.720392493043192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac7070346c7f0d%3A0x9e25baf62ea28ea7!2sJan%20Paul&#39;s%20Lodginghouse!5e0!3m2!1sen!2sph!4v1594051663717!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pastora Homes
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/pastora.jpg')}}" alt="Card image cap">
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/pastora2.jpg')}}" alt="Card image cap">
+        </center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.5610612387973!2d122.9294299140449!3d9.718451993044525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac70708f2a8a7d%3A0xeed296535ab6a1ff!2sPastora%20Homes!5e0!3m2!1sen!2sph!4v1594051842490!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
