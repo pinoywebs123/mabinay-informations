@@ -4,7 +4,7 @@
   
   <title>Mabinay Information System</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="View Map Mapport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -255,24 +255,172 @@
   </div>
 </div>
 
-<!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
   <h2>Tourist Spot</h2>
   <div class="row">
-    <div class="col-sm-8">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5561.4665558753895!2d122.93193292514465!3d9.719332114257773!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1589593438460!5m2!1sen!2sph" width="700" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+      <img class="card-img-top" width="200px" src="{{URL::to('/homepage/mabinay.jpg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mabinay Spring Resort</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+            View More
+          </button>
+        </div>
+      </div>
+
     </div>
-    <div class="col-sm-4">
-      <select class="form-control" id="tourist_placed">
-        <option>Mabinay Spring</option>
-        <option>Mabinay Falls</option>
-        <option>Mabinay Cave</option>
-      </select>
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" width="200px" src="{{URL::to('/homepage/bugsok.jpg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Bugsok Falls</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+            View More
+          </button>
+        </div>
+      </div>
+      
     </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" width="200px" src="{{URL::to('/homepage/Pandalihan.jpg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Pandalihan Cave</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+            View More
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
+   
+  </div>
+  <div class="row" style="margin-top: 40px;">
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" width="200px" src="{{URL::to('/homepage/Bulwang.jpg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Bulwang Crystal cave</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
+            View More
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" width="200px" src="{{URL::to('/homepage/Pinayun.jpg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Pinayun an Peak</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">
+            View More
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" width="200px" src="{{URL::to('/homepage/Niludhan.jpg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Niludhan falls</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal6">
+            View More
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
+
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>Lodging House List</h2>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" width="200px" src="{{URL::to('/homepage/relax.jpg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Honey's Relax Inn</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View Map</a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" width="200px" src="{{URL::to('/homepage/honey.jpg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Honey's Lodging House</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View Map</a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" width="200px" src="{{URL::to('/homepage/echo.jpg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">GRV Eco Lodging House</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View Map</a>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" width="200px" src="{{URL::to('/homepage/jan.jpg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Jan Paul's Lodginghouse</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View Map</a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" width="200px" src="{{URL::to('/homepage/pastora.jpg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Pastora Homes </h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View Map Map</a>
+        </div>
+      </div>
+      
+    </div>
+
+   
+
+  </div>
+ 
+</div>
+
 
 
 
@@ -354,4 +502,149 @@ $(document).ready(function(){
 </script>
 
 </body>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mabinay Spring Resort</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/mabinay.jpg')}}" alt="Card image cap">
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/mabinay2.jpg')}}" alt="Card image cap">
+        </center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.5523095008234!2d122.93101291428017!3d9.719196480473999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac707a90a751fb%3A0x2f72df8c5634ddb4!2sMabinay%20Spring%20Resort!5e0!3m2!1sen!2sph!4v1594012168901!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mabinay Spring Resort</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/bugsok.jpg')}}" alt="Card image cap">
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/bugsok2.jpg')}}" alt="Card image cap">
+        </center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37412.76770434959!2d122.85890645076489!3d9.720857522670242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac655e3eb8de2d%3A0x693a7abb9ea52ebc!2sBugsok%20Falls!5e0!3m2!1sen!2sph!4v1594012504340!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mabinay Spring Resort</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/Pandalihan.jpg')}}" alt="Card image cap">
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/Pandalihan2.jpg')}}" alt="Card image cap">
+        </center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7864.922760560651!2d122.89757651689125!3d9.72692825192611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac701cf69fe4c5%3A0xf959f1ea3f702575!2sPandalihan%20Cave!5e0!3m2!1sen!2sph!4v1594012730755!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mabinay Spring Resort</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/Bulwang.jpg')}}" alt="Card image cap">
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/Bulwang2.jpg')}}" alt="Card image cap">
+        </center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31466.645059265033!2d122.97030169745379!3d9.652764230075343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac7bd6f1d960bf%3A0xe964559563c59d07!2sBulwang%20Caves%20Information%20Center!5e0!3m2!1sen!2sph!4v1594012869235!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mabinay Spring Resort</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/Pinayun.jpg')}}" alt="Card image cap">
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/Pinayun2.jpg')}}" alt="Card image cap">
+        </center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125831.2855662182!2d122.90399104618695!3d9.74677258597425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac70c43e751d13%3A0x7aac123f089e38d5!2sPinayun%20an%20Peak!5e0!3m2!1sen!2sph!4v1594012980217!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mabinay Spring Resort</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/Niludhan.jpg')}}" alt="Card image cap">
+          <img class="card-img-top" width="250px" src="{{URL::to('/homepage/Niludhan2.jpg')}}" alt="Card image cap">
+        </center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15736.065399320174!2d122.8864034940443!3d9.593858622237638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ac62d74d54c16d%3A0x9f948c6d6b2b27ec!2sNiludhan%20Falls!5e0!3m2!1sen!2sph!4v1594013086471!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 </html>
