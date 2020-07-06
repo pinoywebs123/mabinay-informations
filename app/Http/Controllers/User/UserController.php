@@ -8,6 +8,7 @@ use Auth;
 use Illuminate\Support\Facades\Session;
 use App\Post;
 use App\PostImage;
+use App\Comment;
 
 class UserController extends Controller
 {
@@ -95,5 +96,15 @@ class UserController extends Controller
 
         return view('user.post',compact('find_post'));
        
+    }
+    public function create_comment(Request $request,$post_id)
+    {
+        
+        $comment = new Comment;
+        $comment->post_id = $post_id;
+        $comment->user_id = Auth::id();
+        $comment->comment = $request->comment;
+        $comment->save();
+        return redirect()->back()->with('success','Commented Successfully!');
     }
 }
