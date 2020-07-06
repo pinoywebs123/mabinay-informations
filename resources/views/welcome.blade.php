@@ -193,6 +193,12 @@
       font-size: 150px;
     }
   }
+  .tourist{
+    
+  }
+  .lodging {
+
+  }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -255,12 +261,12 @@
   </div>
 </div>
 
-<div id="services" class="container-fluid text-center">
-  <h2>Tourist Spot</h2>
+<div id="services" class="container-fluid text-cente tourist">
+  <h2 class="text-center">Tourist Spot</h2>
   <div class="row">
 
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; margin: 0 auto">
       <img class="card-img-top" width="200px" src="{{URL::to('/homepage/mabinay.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Mabinay Spring Resort</h5>
@@ -273,7 +279,7 @@
 
     </div>
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; margin: 0 auto">
         <img class="card-img-top" width="200px" src="{{URL::to('/homepage/bugsok.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Bugsok Falls</h5>
@@ -286,7 +292,7 @@
       
     </div>
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; margin: 0 auto">
         <img class="card-img-top" width="200px" src="{{URL::to('/homepage/Pandalihan.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Pandalihan Cave</h5>
@@ -304,7 +310,7 @@
   <div class="row" style="margin-top: 40px;">
 
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; margin: 0 auto">
         <img class="card-img-top" width="200px" src="{{URL::to('/homepage/Bulwang.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Bulwang Crystal cave</h5>
@@ -318,7 +324,7 @@
     </div>
 
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; margin: 0 auto">
         <img class="card-img-top" width="200px" src="{{URL::to('/homepage/Pinayun.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Pinayun an Peak</h5>
@@ -332,7 +338,7 @@
     </div>
 
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; margin: 0 auto">
         <img class="card-img-top" width="200px" src="{{URL::to('/homepage/Niludhan.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Niludhan falls</h5>
@@ -349,12 +355,12 @@
   </div>
 </div>
 
-<div id="services" class="container-fluid text-center">
+<div id="lodging" class="container-fluid text-center lodging">
   <h2>Lodging House List</h2>
 
   <div class="row">
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; margin: 0 auto">
         <img class="card-img-top" width="200px" src="{{URL::to('/homepage/relax.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Honey's Relax Inn</h5>
@@ -366,7 +372,7 @@
     </div>
 
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; margin: 0 auto">
         <img class="card-img-top" width="200px" src="{{URL::to('/homepage/honey.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Honey's Lodging House</h5>
@@ -378,7 +384,7 @@
     </div>
 
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; margin: 0 auto">
         <img class="card-img-top" width="200px" src="{{URL::to('/homepage/echo.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">GRV Eco Lodging House</h5>
@@ -392,7 +398,7 @@
   </div>
   <div class="row">
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; margin: 0 auto">
         <img class="card-img-top" width="200px" src="{{URL::to('/homepage/jan.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Jan Paul's Lodginghouse</h5>
@@ -404,7 +410,7 @@
     </div>
 
     <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; margin: 0 auto">
         <img class="card-img-top" width="200px" src="{{URL::to('/homepage/pastora.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Pastora Homes </h5>
