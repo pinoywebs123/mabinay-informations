@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Post;
 use App\Comment;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -48,5 +50,27 @@ class UserController extends Controller
         }
 
         return view('admin.post',compact('find_post','comments'));
+    }
+
+    public function setting()
+    {
+        return view('admin.setting');
+    }
+
+    public function setting_check(Request $request)
+    {
+
+        $validator = Validator::make($request->all(), [
+            'new_password' => 'required',
+            'verify_password' => 'required|same:new_password',
+        ]);
+
+        if($validator->fails()) {
+            return back()->withErrors($validator);
+        }
+
+        $user = User::find(Auth::id());
+        $user->update(['password' => bcrypt($request->verify_password)]);
+        return back()->with('success','Updated Password Successfully!');
     }
 }

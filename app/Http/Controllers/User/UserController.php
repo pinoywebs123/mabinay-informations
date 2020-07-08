@@ -118,4 +118,9 @@ class UserController extends Controller
         }
         return redirect()->back()->with('success','Post removed successfully!');
     }
+
+    public function setting()
+    {
+        return view('user.setting');
+    }
 }

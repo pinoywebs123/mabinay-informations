@@ -21,7 +21,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
                  
-                  <a class="dropdown-item" href="#">Settings</a>
+                <a class="dropdown-item" href="{{route('user_setting')}}">Settings</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="{{route('user_logout')}}">Log out</a>
                 </div>

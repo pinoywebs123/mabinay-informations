@@ -30,6 +30,8 @@ Route::group(['prefix'=> 'admin', 'namespace'=> 'Admin'], function(){
 	Route::post('/user-edit','UserController@user_edit')->name('user_edit');
 	Route::get('/user-message', 'MessageController@user_message')->name('user_message');
 	Route::get('/post/{post_id}', 'UserController@show_post')->name('admin_show_post');
+	Route::get('/setting', 'UserController@setting')->name('admin_setting');
+	Route::post('/setting', 'UserController@setting_check')->name('admin_setting_check');
 });
 
 Route::group(['prefix'=> 'user', 'namespace'=> 'User', 'middleware'=> 'user.status'], function(){
@@ -41,7 +43,7 @@ Route::group(['prefix'=> 'user', 'namespace'=> 'User', 'middleware'=> 'user.stat
 	Route::get('/remove-news/{post_id}','UserController@remove_post')->name('remove_post');
 	Route::get('/post/{post_id}', 'UserController@show_post')->name('show_post');
 	Route::post('/post/{post_id}', 'UserController@create_comment')->name('create_comment');
-
+	Route::get('/setting', 'UserController@setting')->name('user_setting');
 });
 
 
