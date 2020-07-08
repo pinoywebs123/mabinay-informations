@@ -10,10 +10,12 @@
         <div class="card" style="width: 100%;">
             @if($find_post->images)
 
+            <div style="display: flex; flex-direction: row;">
             @foreach($find_post->images as $image)
              <img class="" src="{{URL::to('/images/')}}/{{$image->image}}" alt="{{$image->image}}" width="300px" height="200px">
 
             @endforeach
+          </div>
            
             @else
             No Image Available
