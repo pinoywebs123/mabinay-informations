@@ -34,13 +34,16 @@
           
           <div class="row ">
             <div class="col-md-6 offset-md-3 pt-5">
-            
+              
               <div class="card">
                 <div class="card-header card-header-primary">
                   <h4 class="card-title ">Login Form</h4>
-                 
+                  
                 </div>
                 <div class="card-body">
+                  <center>
+                    <img src="{{URL::to('images/logo.png')}}" width="100px">
+                  </center>
                   <div class="table-responsive">
                     <form action="{{route('login')}}" method="POST">
                       <div class="form-group">

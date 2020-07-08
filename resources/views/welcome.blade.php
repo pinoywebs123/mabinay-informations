@@ -211,7 +211,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#myPage">
+      <img src="{{URL::to('images/logo.png')}}" width="40px">
+      </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -244,7 +246,9 @@
      
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
+      <center style="margin-top: 100px;">
+        <img src="{{URL::to('images/logo.png')}}" width="200px" height="200px">
+      </center>
     </div>
   </div>
 </div>
